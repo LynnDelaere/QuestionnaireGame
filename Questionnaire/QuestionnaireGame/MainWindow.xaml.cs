@@ -16,12 +16,12 @@ namespace QuestionnaireGame
 {
     public partial class MainWindow : Window, IQuestionHandler
     {
-        const int answerAmount = 4;
-        const int numberOfQuestions = 10;
-        int currentQuestionIndex = 0;
+        private const int answerAmount = 4;
+        private const int numberOfQuestions = 10;
+        private int currentQuestionIndex = 0;
 
-        Question ConvertQuestion = new Question(null);
-        Button[] answerButtons = new Button[answerAmount];
+        private Question convertQuestion = new Question(null);
+        private Button[] answerButtons = new Button[answerAmount];
         public MainWindow()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace QuestionnaireGame
         }
         public void ProcessQuestion(TriviaMultipleChoiceQuestion question)
         {
-            ConvertQuestion.Text = question.Question.Text;
+            convertQuestion.Text = question.Question.Text;
             Answer correctAnswer = new Answer(question.CorrectAnswer, true);
             Answer incorrectAnswer = new Answer(question.IncorrectAnswers[0], false);
             Answer incorrectAnswer2 = new Answer(question.IncorrectAnswers[1], false);
@@ -40,7 +40,7 @@ namespace QuestionnaireGame
             answers.Add(incorrectAnswer2);
             answers.Add(incorrectAnswer3);
             Shuffle(answers);
-            txtQuestion.Text = ConvertQuestion.Text;
+            txtQuestion.Text = convertQuestion.Text;
             for (int i = 0; i < answerAmount; i++)
             {
                 int answerIndex = i;
@@ -62,7 +62,7 @@ namespace QuestionnaireGame
                 btbAnswers.Children.Add(answerButtons[i]);
             }
         }
-        public async void CheckAnswer(int answerIndex, List<Answer> answers)
+        private async void CheckAnswer(int answerIndex, List<Answer> answers)
         {
             if (answers[answerIndex].IsCorrect)
             {

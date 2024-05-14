@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{572101ED-7861-4D28-AC83-85C2481A9293}|QuestionnaireLibrary\\QuestionnaireLibrary.csproj|c:\\users\\lynnd\\onedrive - hogeschool vives\\fase1\\semester2\\objectorientatedprogramming\\questionnaire\\questionnairelibrary\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{572101ED-7861-4D28-AC83-85C2481A9293}|QuestionnaireLibrary\\QuestionnaireLibrary.csproj|solutionrelative:questionnairelibrary\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B492660-3D12-465E-A5B7-71786005F6E3}|QuestionnaireGame\\QuestionnaireGame.csproj|c:\\users\\lynnd\\onedrive - hogeschool vives\\fase1\\semester2\\objectorientatedprogramming\\questionnaire\\questionnairegame\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5B492660-3D12-465E-A5B7-71786005F6E3}|QuestionnaireGame\\QuestionnaireGame.csproj|solutionrelative:questionnairegame\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5B492660-3D12-465E-A5B7-71786005F6E3}|QuestionnaireGame\\QuestionnaireGame.csproj|c:\\users\\lynnd\\onedrive - hogeschool vives\\fase1\\semester2\\objectorientatedprogramming\\questionnaire\\questionnairegame\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B492660-3D12-465E-A5B7-71786005F6E3}|QuestionnaireGame\\QuestionnaireGame.csproj|solutionrelative:questionnairegame\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B492660-3D12-465E-A5B7-71786005F6E3}|QuestionnaireGame\\QuestionnaireGame.csproj|c:\\users\\lynnd\\onedrive - hogeschool vives\\fase1\\semester2\\objectorientatedprogramming\\questionnaire\\questionnairegame\\about.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B492660-3D12-465E-A5B7-71786005F6E3}|QuestionnaireGame\\QuestionnaireGame.csproj|solutionrelative:questionnairegame\\about.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B492660-3D12-465E-A5B7-71786005F6E3}|QuestionnaireGame\\QuestionnaireGame.csproj|c:\\users\\lynnd\\onedrive - hogeschool vives\\fase1\\semester2\\objectorientatedprogramming\\questionnaire\\questionnairegame\\about.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5B492660-3D12-465E-A5B7-71786005F6E3}|QuestionnaireGame\\QuestionnaireGame.csproj|solutionrelative:questionnairegame\\about.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{EBD37B13-F01D-4B81-AC0F-1410727D1DC4}|ScoreboardLibrary\\ScoreboardLibrary.csproj|c:\\users\\lynnd\\onedrive - hogeschool vives\\fase1\\semester2\\objectorientatedprogramming\\questionnaire\\scoreboardlibrary\\scoreboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBD37B13-F01D-4B81-AC0F-1410727D1DC4}|ScoreboardLibrary\\ScoreboardLibrary.csproj|solutionrelative:scoreboardlibrary\\scoreboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,63 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Question.cs",
-              "DocumentMoniker": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\QuestionnaireLibrary\\Question.cs",
-              "RelativeDocumentMoniker": "QuestionnaireLibrary\\Question.cs",
-              "ToolTip": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\QuestionnaireLibrary\\Question.cs",
-              "RelativeToolTip": "QuestionnaireLibrary\\Question.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAADwvzQAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T18:09:35.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\QuestionnaireGame\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "QuestionnaireGame\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\QuestionnaireGame\\MainWindow.xaml",
-              "RelativeToolTip": "QuestionnaireGame\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-14T14:43:44.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\QuestionnaireGame\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "QuestionnaireGame\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\QuestionnaireGame\\MainWindow.xaml.cs",
               "RelativeToolTip": "QuestionnaireGame\\MainWindow.xaml.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAswDwAAAA5AAAA",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAkwFQAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T14:06:59.633Z",
+              "WhenOpened": "2024-05-14T18:41:31.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "About.xaml",
-              "DocumentMoniker": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\QuestionnaireGame\\About.xaml",
-              "RelativeDocumentMoniker": "QuestionnaireGame\\About.xaml",
-              "ToolTip": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\QuestionnaireGame\\About.xaml",
-              "RelativeToolTip": "QuestionnaireGame\\About.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-14T09:34:12.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "About.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\QuestionnaireGame\\About.xaml.cs",
-              "RelativeDocumentMoniker": "QuestionnaireGame\\About.xaml.cs",
-              "ToolTip": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\QuestionnaireGame\\About.xaml.cs",
-              "RelativeToolTip": "QuestionnaireGame\\About.xaml.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAACMAAAAMAAAA",
+              "DocumentIndex": 1,
+              "Title": "Scoreboard.cs",
+              "DocumentMoniker": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\ScoreboardLibrary\\Scoreboard.cs",
+              "RelativeDocumentMoniker": "ScoreboardLibrary\\Scoreboard.cs",
+              "ToolTip": "C:\\Users\\lynnd\\OneDrive - Hogeschool VIVES\\Fase1\\Semester2\\ObjectOrientatedProgramming\\Questionnaire\\ScoreboardLibrary\\Scoreboard.cs",
+              "RelativeToolTip": "ScoreboardLibrary\\Scoreboard.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T09:57:53.868Z"
+              "WhenOpened": "2024-05-14T18:33:57.734Z"
             }
           ]
         }
