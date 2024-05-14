@@ -77,3 +77,4 @@ Once installed open the project solution called 'Questionnaire.sln' in Visual St
 * Include buttons for category and difficulty so the user can choose the desired questions
 * Include buttons so the amount of questions can be increased or decreased
 * Making sure that regardless the length of the incoming text it all fits the template
+* Add a scoreboard at the end of the game
