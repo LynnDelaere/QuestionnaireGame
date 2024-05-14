@@ -69,6 +69,8 @@ Once installed open the project solution called 'Questionnaire.sln' in Visual St
 
 ## UML Class Diagram
 
+![UML Questionnaire](/Images/UMLQuestionnaire.png "UML diagram")
+
 ## Future Improvements
 
 * Enhance user interface design and interactivity in the WPF application.
