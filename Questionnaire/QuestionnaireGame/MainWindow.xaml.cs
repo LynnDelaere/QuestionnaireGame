@@ -45,7 +45,12 @@ namespace QuestionnaireGame
             {
                 int answerIndex = i;
                 this.answerButtons[i] = new Button();
-                this.answerButtons[i].Content = answers[i].Text;
+                this.answerButtons[i].Content = new TextBlock()
+                {
+                    Text = answers[i].Text,
+                    TextWrapping = TextWrapping.Wrap,
+
+                };
                 this.answerButtons[i].Click += (sender, e) => CheckAnswer(answerIndex, answers);
                 this.answerButtons[i].Margin = new Thickness(0, 10, 0, 0);
                 this.answerButtons[i].Padding = new Thickness(5, 5, 5, 5);
@@ -53,6 +58,7 @@ namespace QuestionnaireGame
                 this.answerButtons[i].Background = Brushes.LightPink;
                 this.answerButtons[i].Foreground = Brushes.HotPink;
                 this.answerButtons[i].FontSize = 20;
+                this.answerButtons[i].Width = Double.NaN;
                 btbAnswers.Children.Add(answerButtons[i]);
             }
         }
@@ -88,6 +94,7 @@ namespace QuestionnaireGame
             else
             {
                 MessageBox.Show("There are no more questions");
+                Application.Current.Shutdown();
             }
         }
         private void btnMinimalize_Click(object sender, RoutedEventArgs e)

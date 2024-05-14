@@ -89,7 +89,7 @@
             </StackPanel>
             <TextBlock 
                 x:Name="txtCorrectAnswer" 
-                FontSize="25"
+                FontSize="20"
                 Grid.Row="5"
                 Grid.Column="1"
                 HorizontalAlignment="Center"
@@ -100,8 +100,8 @@
                 Content="Next Question"
                 Grid.Row="6"
                 Grid.Column="1"
-                Width="100"
-                Height="30"
+                Width="160"                
+                FontSize="20"
                 Background="LightPink"
                 BorderBrush="HotPink"
                 Foreground="HotPink"

@@ -17,8 +17,12 @@ namespace QuestionnaireLibrary
 
         }
         public List<Answer> PossibleAnswers = new List<Answer>();
-        public string ImageUrl { get; set; }
-
+        private string imageURL;
+        public string ImageURL
+        {
+            get { return imageURL; }
+            set { imageURL = value; }
+        }
         // Constructor
         public Question(string text)
         {
@@ -46,7 +50,7 @@ namespace QuestionnaireLibrary
         }
         public override string ToString()
         {
-            return $"Text: {Text}, ImageUrl: {ImageUrl}, Possible answers: {PossibleAnswers}";
+            return Text;
         }
     }
 }
