@@ -64,6 +64,10 @@ namespace QuestionnaireGame
         }
         private async void CheckAnswer(int answerIndex, List<Answer> answers)
         {
+            foreach (var button in answerButtons)
+            {
+                button.IsEnabled = false;
+            }
             if (answers[answerIndex].IsCorrect)
             {
                 txtCorrectAnswer.Text = "Correct";
