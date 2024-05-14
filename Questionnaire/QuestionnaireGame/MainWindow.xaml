@@ -1,0 +1,112 @@
+﻿<Window x:Class="QuestionnaireGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuestionnaireGame"
+        mc:Ignorable="d"
+        Title="QuizGame"
+        Height="600" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        WindowStyle="None" FontFamily="Calibri Bold" Foreground="HotPink" Background="PapayaWhip">
+    <Border
+        BorderThickness="5"
+        BorderBrush="HotPink">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="5"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel 
+                Grid.Row="1"
+                Grid.Column="1"
+                Orientation="Horizontal"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                <Button
+                    x:Name="btnAbout"
+                    Content="About" 
+                    Width="50" 
+                    Height="20"
+                    Margin="10,0,10,0"
+                    Background="LightPink"
+                    BorderBrush="HotPink" 
+                    Foreground="HotPink"
+                    Click="btnAbout_Click"/>
+                <Button 
+                    x:Name="btnMinimalize"
+                    Content="_" 
+                    Width="20" 
+                    Height="20"
+                    Margin="10,0,10,0"
+                    Background="LightPink"
+                    BorderBrush="HotPink" 
+                    Foreground="HotPink"
+                    Click="btnMinimalize_Click"/>
+                <Button
+                    x:Name="btnClose"
+                    Content="X" 
+                    Width="20" 
+                    Height="20"
+                    Margin="10,0,10,0"
+                    Background="LightPink"
+                    BorderBrush="HotPink" 
+                    Foreground="HotPink"
+                    Click="btnClose_Click"/>
+            </StackPanel>
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="1"
+                Text="Quiz Game"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="40"/>
+            <TextBlock 
+                x:Name="txtQuestion" 
+                Text="Question" 
+                FontSize="20"
+                Grid.Row="3"
+                Grid.Column="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                TextWrapping="WrapWithOverflow"/>
+            <StackPanel
+                x:Name="btbAnswers"
+                Grid.Row="4"
+                Grid.Column="1"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center">
+            </StackPanel>
+            <TextBlock 
+                x:Name="txtCorrectAnswer" 
+                FontSize="25"
+                Grid.Row="5"
+                Grid.Column="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                TextWrapping="WrapWithOverflow"/>
+            <Button
+                x:Name="btnNextQuestion"
+                Content="Next Question"
+                Grid.Row="6"
+                Grid.Column="1"
+                Width="100"
+                Height="30"
+                Background="LightPink"
+                BorderBrush="HotPink"
+                Foreground="HotPink"
+                Click="btnNextQuestion_Click"
+                />
+        </Grid>
+    </Border>
+</Window>
