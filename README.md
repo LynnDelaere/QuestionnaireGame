@@ -59,7 +59,9 @@ For user convenience, an "About" button is included, which opens a separate wind
 
 ![About window](/Images/AboutWindow.png "About window")
 
-![Textbox end of questions](/Images/MessageBox.png "MessageBox at the end of the quiz")
+![Scoreboard window](/Images/Scoreboard.png "Scoreboard window")
+
+![No questions to load](/Images/MessageboxNoInternet.png)
 
 ## Setup and Usage
 
@@ -77,4 +79,5 @@ Once installed open the project solution called 'Questionnaire.sln' in Visual St
 * Include buttons for category and difficulty so the user can choose the desired questions
 * Include buttons so the amount of questions can be increased or decreased
 * Making sure that regardless the length of the incoming text it all fits the template
-* Add a scoreboard at the end of the game
+* Make a full scoreboard at the end of the quiz that stores the highscore of players
+* Implement own questions when there is no internet connection
