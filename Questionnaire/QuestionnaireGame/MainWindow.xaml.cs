@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics.Eventing.Reader;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -18,59 +19,73 @@ namespace QuestionnaireGame
     {
         private const int answerAmount = 4;
         private const int numberOfQuestions = 10;
-        private int currentQuestionIndex = 0;
+        private int questionAnswerd = 0;
+        private int questionAnswerdCorrect = 0;
 
+        private List<Question> ownQuestions = new List<Question>();
         private Question convertQuestion = new Question(null);
         private Button[] answerButtons = new Button[answerAmount];
         public MainWindow()
         {
             InitializeComponent();
             TriviaApiRequester.RequestRandomQuestion(this);
+
         }
         public void ProcessQuestion(TriviaMultipleChoiceQuestion question)
         {
-            convertQuestion.Text = question.Question.Text;
-            Answer correctAnswer = new Answer(question.CorrectAnswer, true);
-            Answer incorrectAnswer = new Answer(question.IncorrectAnswers[0], false);
-            Answer incorrectAnswer2 = new Answer(question.IncorrectAnswers[1], false);
-            Answer incorrectAnswer3 = new Answer(question.IncorrectAnswers[2], false);
-            List<Answer> answers = new List<Answer>();
-            answers.Add(correctAnswer);
-            answers.Add(incorrectAnswer);
-            answers.Add(incorrectAnswer2);
-            answers.Add(incorrectAnswer3);
-            Shuffle(answers);
-            txtQuestion.Text = convertQuestion.Text;
-            for (int i = 0; i < answerAmount; i++)
+            if (question != null)
             {
-                int answerIndex = i;
-                this.answerButtons[i] = new Button();
-                this.answerButtons[i].Content = new TextBlock()
+                convertQuestion.Text = question.Question.Text;
+                Answer correctAnswer = new Answer(question.CorrectAnswer, true);
+                Answer incorrectAnswer = new Answer(question.IncorrectAnswers[0], false);
+                Answer incorrectAnswer2 = new Answer(question.IncorrectAnswers[1], false);
+                Answer incorrectAnswer3 = new Answer(question.IncorrectAnswers[2], false);
+                List<Answer> answers = new List<Answer>();
+                answers.Add(correctAnswer);
+                answers.Add(incorrectAnswer);
+                answers.Add(incorrectAnswer2);
+                answers.Add(incorrectAnswer3);
+                Shuffle(answers);
+                txtQuestion.Text = convertQuestion.Text;
+                for (int i = 0; i < answerAmount; i++)
                 {
-                    Text = answers[i].Text,
-                    TextWrapping = TextWrapping.Wrap,
+                    int answerIndex = i;
+                    this.answerButtons[i] = new Button();
+                    this.answerButtons[i].Content = new TextBlock()
+                    {
+                        Text = answers[i].Text,
+                        TextWrapping = TextWrapping.Wrap,
 
-                };
-                this.answerButtons[i].Click += (sender, e) => CheckAnswer(answerIndex, answers);
-                this.answerButtons[i].Margin = new Thickness(0, 10, 0, 0);
-                this.answerButtons[i].Padding = new Thickness(5, 5, 5, 5);
-                this.answerButtons[i].BorderBrush = Brushes.HotPink;
-                this.answerButtons[i].Background = Brushes.LightPink;
-                this.answerButtons[i].Foreground = Brushes.HotPink;
-                this.answerButtons[i].FontSize = 20;
-                this.answerButtons[i].Width = Double.NaN;
-                btbAnswers.Children.Add(answerButtons[i]);
+                    };
+                    this.answerButtons[i].Click += (sender, e) => CheckAnswer(answerIndex, answers);
+                    this.answerButtons[i].Margin = new Thickness(0, 10, 0, 0);
+                    this.answerButtons[i].Padding = new Thickness(5, 5, 5, 5);
+                    this.answerButtons[i].BorderBrush = Brushes.HotPink;
+                    this.answerButtons[i].Background = Brushes.LightPink;
+                    this.answerButtons[i].Foreground = Brushes.HotPink;
+                    this.answerButtons[i].FontSize = 15;
+                    this.answerButtons[i].Width = Double.NaN;
+                    btbAnswers.Children.Add(answerButtons[i]);
+                    btnNextQuestion.IsEnabled = false;
+                }
             }
+            else
+            {
+                MessageBox.Show("No question found");
+            }
+
         }
         private async void CheckAnswer(int answerIndex, List<Answer> answers)
         {
             foreach (var button in answerButtons)
             {
+                btnNextQuestion.IsEnabled = true;
                 button.IsEnabled = false;
             }
             if (answers[answerIndex].IsCorrect)
             {
                 txtCorrectAnswer.Text = "Correct";
+                questionAnswerdCorrect++;
             }
             else
             {
@@ -88,8 +103,8 @@ namespace QuestionnaireGame
         }
         private async void btnNextQuestion_Click(object sender, RoutedEventArgs e)
         {
-            currentQuestionIndex++;
-            if (currentQuestionIndex < numberOfQuestions)
+            questionAnswerd++;
+            if (questionAnswerd < numberOfQuestions)
             {
                 btbAnswers.Children.Clear();
                 txtCorrectAnswer.Text = "";
@@ -97,8 +112,9 @@ namespace QuestionnaireGame
             }
             else
             {
-                MessageBox.Show("There are no more questions");
-                Application.Current.Shutdown();
+                Scoreboard scoreboard = new Scoreboard(questionAnswerdCorrect, numberOfQuestions);
+                scoreboard.Show();
+                this.Close();
             }
         }
         private void btnMinimalize_Click(object sender, RoutedEventArgs e)

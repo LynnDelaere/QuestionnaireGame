@@ -39,8 +39,7 @@ namespace QuestionnaireGame
         {
             this.Close();
             MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            
+            mainWindow.Show();    
         }
         private void btnGithub_Click(object sender, RoutedEventArgs e)
         {
